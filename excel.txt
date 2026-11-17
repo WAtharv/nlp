@@ -1,0 +1,214 @@
+Practical 1: Fundamentals of Microsoft Excel
+Aim: To study and demonstrate the fundamentals of Microsoft Excel.
+
+Procedure:
+1. Open Microsoft Excel from the Start Menu.
+2. Click on Blank Workbook to create a new workbook.
+3. Explore the Ribbon, Formula Bar, Name Box and Quick Access Toolbar.
+4. Identify rows, columns, cells and worksheets.
+5. Enter sample data into different cells.
+6. Select individual cells and ranges of cells.
+7. Insert a new worksheet using the plus (+) button.
+8. Rename the worksheet by double-clicking its sheet name.
+9. Save the workbook using File → Save As.
+Result: Successfully studied the fundamentals and basic interface of Microsoft Excel.
+Practical 2: Entering and Editing Text and Formulas
+Aim: To study and demonstrate entering and editing text and formulas in Excel.
+
+Procedure:
+1. Open Excel and create a blank workbook.
+2. Enter the following data:
+A (Item)	B (Quantity)	C (Price)
+Pen	10	5
+Book	5	40
+Pencil	20	3
+Bag	2	500
+
+3. Enter the heading Total in cell D1.
+4. Enter the following formula in D2:
+=B2*C2
+5. Press Enter to calculate the total price.
+6. Drag the Fill Handle from D2 to D5 to copy the formula.
+7. Edit cell contents using F2 or the Formula Bar.
+8. Use Delete to clear unwanted cell contents.
+9. Save the workbook.
+Expected output:
+Item	Quantity	Price	Total
+Pen	10	5	50
+Book	5	40	200
+Pencil	20	3	60
+Bag	2	500	1000
+
+Formula: =B2*C2
+
+Result: Successfully entered, edited and calculated text, numbers and formulas in Excel.
+Practical 3: Basic Excel Functions and Modifying an Excel Worksheet
+Aim: To study and demonstrate basic Excel functions and modifying an Excel worksheet.
+
+Procedure:
+1. Open Excel and create a new worksheet.
+2. Enter the following student marks data.
+Name	English	Maths	Science
+Rahul	80	75	90
+Amit	65	70	60
+Priya	90	85	95
+Sneha	45	55	60
+Rohan	30	35	40
+
+3. Enter headings Total, Average, Maximum, Minimum and Result in columns E to I.
+4. Enter the following formulas in row 2.
+Function	Formula
+SUM	=SUM(B2:D2)
+AVERAGE	=AVERAGE(B2:D2)
+MAX	=MAX(B2:D2)
+MIN	=MIN(B2:D2)
+IF	=IF(F2>=40,"Pass","Fail")
+COUNT	=COUNT(B2:D2)
+
+5. Press Enter after entering each formula.
+6. Drag the Fill Handle to apply formulas to all students.
+7. Use AutoSum to calculate totals.
+8. Insert or delete rows and columns as required.
+9. Adjust row height and column width.
+10. Save the worksheet.
+Expected output:
+Name	Total	Average	Maximum	Minimum	Result
+Rahul	245	81.67	90	75	Pass
+Amit	195	65	70	60	Pass
+Priya	270	90	95	85	Pass
+Sneha	160	53.33	60	45	Pass
+Rohan	105	35	40	30	Fail
+
+Additional formulas for practice:
+Function	Formula
+COUNTIF	=COUNTIF(B2:D6,">=40")
+SUMIF	=SUMIF(B2:B6,">50")
+COUNTA	=COUNTA(A2:A6)
+COUNTBLANK	=COUNTBLANK(B2:D6)
+
+Result: Successfully performed basic Excel functions and modified the worksheet.
+Practical 4: Data Formatting in an Excel Worksheet
+Aim: To study and demonstrate data formatting in an Excel worksheet.
+
+Procedure:
+1. Open Excel and enter student details or sales data.
+2. Select the heading row and apply Bold formatting using Ctrl+B.
+3. Change the font size and font colour.
+4. Apply background colour using Fill Color.
+5. Select the data range and apply borders.
+6. Use Center Alignment to align the text.
+7. Apply Merge & Center to the main heading.
+8. Apply Number Format, Currency Format and Percentage Format.
+9. Use Wrap Text to display lengthy text.
+10. Apply Conditional Formatting to highlight specific values.
+11. Apply Sort and Filter to organize the data.
+12. Save the formatted worksheet.
+Important formulas used in formatting practical:
+Operation	Formula
+Percentage	=E2/300*100
+Grade	=IF(F2>=75,"A",IF(F2>=60,"B",IF(F2>=40,"C","Fail")))
+Conditional status	=IF(E2>=120,"Good","Average")
+Rank	=RANK(E2,$E$2:$E$6,0)
+
+Result: Successfully applied different formatting options and formulas to an Excel worksheet.
+
+Important formulas to remember for the practical exam
+No.	Formula	Use
+1	=SUM(A1:A10)	Total
+2	=AVERAGE(A1:A10)	Average
+3	=MAX(A1:A10)	Highest value
+4	=MIN(A1:A10)	Lowest value
+5	=COUNT(A1:A10)	Count numbers
+6	=COUNTA(A1:A10)	Count non-empty cells
+7	=COUNTBLANK(A1:A10)	Count blank cells
+8	=IF(A1>=40,"Pass","Fail")	Condition
+9	=SUMIF(A1:A10,">50")	Conditional sum
+10	=COUNTIF(A1:A10,">50")	Conditional count
+11	=ROUND(A1,2)	Round values
+12	=TODAY()	Current date
+
+
+
+
+Here are the most important Excel formulas with syntax, examples and their uses for your Excel and Advanced Excel practicals.
+1. Basic Mathematical Formulas
+Function	Formula	Purpose
+SUM	=SUM(A1:A10)	Calculates total
+AVERAGE	=AVERAGE(A1:A10)	Calculates average
+MAX	=MAX(A1:A10)	Finds highest value
+MIN	=MIN(A1:A10)	Finds lowest value
+PRODUCT	=PRODUCT(A1:A5)	Multiplies values
+ABS	=ABS(-25)	Returns positive value
+ROUND	=ROUND(A1,2)	Rounds to 2 decimal places
+MOD	=MOD(10,3)	Returns remainder
+POWER	=POWER(2,3)	Calculates power
+SQRT	=SQRT(25)	Calculates square root
+
+2. Counting Formulas
+Function	Formula	Purpose
+COUNT	=COUNT(A1:A10)	Counts numerical cells
+COUNTA	=COUNTA(A1:A10)	Counts non-empty cells
+COUNTBLANK	=COUNTBLANK(A1:A10)	Counts empty cells
+COUNTIF	=COUNTIF(A1:A10,">50")	Counts cells meeting a condition
+COUNTIFS	=COUNTIFS(A1:A10,">50",B1:B10,"Pass")	Counts using multiple conditions
+
+3. Logical Formulas
+Function	Formula	Purpose
+IF	=IF(A1>=40,"Pass","Fail")	Checks a condition
+AND	=AND(A1>40,B1>40)	TRUE if all conditions are true
+OR	=OR(A1>40,B1>40)	TRUE if any condition is true
+NOT	=NOT(A1>40)	Reverses logical result
+IFERROR	=IFERROR(A1/B1,0)	Handles formula errors
+
+4. Text Formulas
+Function	Formula	Purpose
+LEFT	=LEFT(A1,3)	Extracts 3 characters from left
+RIGHT	=RIGHT(A1,3)	Extracts 3 characters from right
+MID	=MID(A1,2,4)	Extracts characters from middle
+LEN	=LEN(A1)	Counts characters
+UPPER	=UPPER(A1)	Converts to uppercase
+LOWER	=LOWER(A1)	Converts to lowercase
+PROPER	=PROPER(A1)	Capitalizes first letter of each word
+TRIM	=TRIM(A1)	Removes extra spaces
+CONCAT	=CONCAT(A1,B1)	Joins text
+TEXTJOIN	=TEXTJOIN(" ",TRUE,A1:B1)	Joins text with a separator
+
+5. Date and Time Formulas
+Function	Formula	Purpose
+TODAY	=TODAY()	Displays current date
+NOW	=NOW()	Displays current date and time
+DAY	=DAY(A1)	Extracts day
+MONTH	=MONTH(A1)	Extracts month
+YEAR	=YEAR(A1)	Extracts year
+DATE	=DATE(2026,11,17)	Creates a date
+HOUR	=HOUR(A1)	Extracts hour
+MINUTE	=MINUTE(A1)	Extracts minute
+SECOND	=SECOND(A1)	Extracts second
+
+6. Conditional Mathematical Formulas
+Function	Formula	Purpose
+SUMIF	=SUMIF(A1:A10,">50",B1:B10)	Adds values meeting one condition
+SUMIFS	=SUMIFS(C1:C10,A1:A10,"Apple",B1:B10,">10")	Adds values meeting multiple conditions
+AVERAGEIF	=AVERAGEIF(A1:A10,">50")	Average based on condition
+AVERAGEIFS	=AVERAGEIFS(C1:C10,A1:A10,"Pass")	Average based on multiple conditions
+
+7. Lookup Formulas
+Function	Formula	Purpose
+VLOOKUP	=VLOOKUP(E2,A2:C10,2,FALSE)	Searches vertically
+HLOOKUP	=HLOOKUP(B5,A1:F3,2,FALSE)	Searches horizontally
+XLOOKUP	=XLOOKUP(E2,A2:A10,B2:B10)	Searches and returns matching value
+INDEX	=INDEX(B2:B10,3)	Returns value at a position
+MATCH	=MATCH(E2,A2:A10,0)	Finds matching position
+
+8. Important Excel Operators
+Operator	Meaning	Example
++	Addition	=A1+B1
+-	Subtraction	=A1-B1
+*	Multiplication	=A1*B1
+/	Division	=A1/B1
+^	Power	=A1^2
+%	Percentage	=A1*10%
+&	Joins text	=A1&B1
+=	Equal to	=A1=B1
+>	Greater than	=A1>50
+<	Less than	=A1<50

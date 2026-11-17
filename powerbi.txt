@@ -1,0 +1,349 @@
+Practical 5: Introduction to Power BI, Basic Charts, Maps, Tables and Matrix
+Aim: To study and demonstrate the introduction to Power BI, basic charts, maps, tables and matrix.
+Procedure
+1. Open Power BI Desktop.
+2. Click Home → Get Data → Excel Workbook.
+3. Select an Excel dataset and click Open.
+4. Select the required sheet and click Load.
+5. Explore Report View, Data View and Model View.
+6. Select Clustered Column Chart from the Visualizations pane.
+7. Drag Category into X-axis and Sales into Y-axis.
+8. Select Bar Chart and drag Category into Y-axis and Sales into X-axis.
+9. Select Pie Chart and drag Category into Legend and Sales into Values.
+10. Select Donut Chart and add Category and Sales fields.
+11. Select Map visual and drag City into Location and Sales into Size.
+12. Select Table visual and drag Name, Category and Sales into it.
+13. Select Matrix visual and drag Category into Rows, Region into Columns and Sales into Values.
+14. Format the visuals using the Format pane.
+15. Save the report using File → Save.
+Important concepts
+Concept	Description
+Power BI	Business Intelligence and data visualization tool
+Report View	Creates charts and reports
+Data View	Displays imported data
+Model View	Manages table relationships
+Map	Displays geographical data
+Table	Displays data in rows and columns
+Matrix	Displays summarized data with rows and columns
+
+Result: Successfully imported data and created basic charts, maps, tables and matrix visuals in Power BI.
+
+
+Practical 6: Other Charts, Cards, Filters, Slicers and Advanced Charts
+Aim: To study and demonstrate other charts, cards, filters, slicers and advanced charts in Power BI.
+Procedure
+1. Open Power BI Desktop and load the dataset.
+2. Select Line Chart and drag Date into X-axis and Sales into Y-axis.
+3. Select Area Chart and add Date and Sales fields.
+4. Select Scatter Chart and add Sales to X-axis and Profit to Y-axis.
+5. Select Funnel Chart and add Category and Sales fields.
+6. Select Waterfall Chart and add Category and Sales fields.
+7. Select Card visual and drag Sales into the Data field to display total sales.
+8. Select Multi-row Card and add Category and Sales.
+9. Select Gauge visual and add Sales as Value and Target Sales as Target value.
+10. Open the Filters pane and apply a Visual-level filter.
+11. Apply Page-level and Report-level filters.
+12. Select Slicer visual from the Visualizations pane.
+13. Drag Region into the Field section of the slicer.
+14. Select different regions to filter the report.
+15. Format all visuals and save the report.
+Important formulas (DAX)
+Create these measures using Modeling → New Measure.
+Measure	Formula
+Total Sales	Total Sales = SUM(Sales[Sales])
+Total Profit	Total Profit = SUM(Sales[Profit])
+Average Sales	Average Sales = AVERAGE(Sales[Sales])
+Total Orders	Total Orders = COUNT(Sales[Order ID])
+Maximum Sales	Maximum Sales = MAX(Sales[Sales])
+Minimum Sales	Minimum Sales = MIN(Sales[Sales])
+Profit Percentage	Profit % = DIVIDE([Total Profit],[Total Sales],0)*100
+
+Note: Replace Sales and column names with the actual names in your dataset.
+Important concepts
+Concept	Description
+Card	Displays a single numerical value
+Multi-row Card	Displays multiple values
+Filter	Restricts displayed data
+Slicer	Interactive filter on the report page
+Gauge	Compares actual value with target
+Funnel	Displays process stages
+
+Result: Successfully created advanced charts, cards, filters and slicers in Power BI.
+
+
+Practical 7: Objects, Power BI Service and Power Query (Text and Date Functions)
+Aim: To study and demonstrate objects in Power BI, Power BI Service and Power Query text and date functions.
+Procedure A: Working with Objects in Power BI
+1. Open Power BI Desktop and load an Excel dataset.
+2. Select Insert → Text Box to insert a text heading.
+3. Select Insert → Image to insert an image.
+4. Select Insert → Shapes to insert shapes.
+5. Select Insert → Buttons to add navigation buttons.
+6. Use the Format pane to change the colour, size and position of objects.
+7. Arrange the objects to create an attractive report layout.
+Procedure B: Introduction to Power BI Service
+1. Open a web browser and visit Power BI Service.
+2. Sign in using your organizational or educational account.
+3. Explore the Home page and available workspaces.
+4. Open My Workspace.
+5. Explore reports, dashboards and semantic models.
+6. Publish a report from Power BI Desktop using Home → Publish.
+7. Select the required workspace to publish the report.
+8. Open the published report in Power BI Service.
+
+
+
+
+
+
+
+
+learn.microsoft.com
+
+
+Procedure C: Power Query Text Functions
+1. Open Power BI Desktop and import an Excel dataset.
+2. Select Home → Transform Data.
+3. Power Query Editor will open.
+4. Select the text column that needs modification.
+5. Select Transform → Format → UPPERCASE to convert text into capital letters.
+6. Select Transform → Format → lowercase to convert text into lowercase.
+7. Select Transform → Format → Capitalize Each Word.
+8. Select Transform → Format → Trim to remove extra spaces.
+9. Select Transform → Format → Clean to remove non-printable characters.
+10. Click Close & Apply to save the transformations.
+Important Text Functions (Power Query M)
+Function	Formula	Purpose
+Text.Upper	Text.Upper([Name])	Converts text to uppercase
+Text.Lower	Text.Lower([Name])	Converts text to lowercase
+Text.Proper	Text.Proper([Name])	Capitalizes each word
+Text.Trim	Text.Trim([Name])	Removes leading and trailing spaces
+Text.Clean	Text.Clean([Name])	Removes non-printable characters
+Text.Length	Text.Length([Name])	Counts characters
+Text.Start	Text.Start([Name],3)	Extracts first 3 characters
+Text.End	Text.End([Name],3)	Extracts last 3 characters
+Text.Middle	Text.Middle([Name],1,3)	Extracts characters from middle
+Text.Replace	Text.Replace([Name],"A","B")	Replaces text
+
+Procedure D: Power Query Date Functions
+1. Open Power Query Editor using Transform Data.
+2. Select the date column.
+3. Change the column data type to Date.
+4. Select Add Column → Date → Year → Year.
+5. Repeat to extract Month and Day.
+6. Use Date → Month → Name of Month to display the month name.
+7. Use Date → Day → Name of Day to display the weekday.
+8. Use Date → Start of Month or End of Month to extract month boundaries.
+9. Click Close & Apply.
+Important Date Functions (Power Query M)
+Function	Formula	Purpose
+Date.Year	Date.Year([Date])	Extracts year
+Date.Month	Date.Month([Date])	Extracts month number
+Date.Day	Date.Day([Date])	Extracts day
+Date.MonthName	Date.MonthName([Date])	Returns month name
+Date.DayOfWeek	Date.DayOfWeek([Date])	Returns weekday number
+Date.DayOfYear	Date.DayOfYear([Date])	Returns day of year
+Date.StartOfMonth	Date.StartOfMonth([Date])	First day of month
+Date.EndOfMonth	Date.EndOfMonth([Date])	Last day of month
+Date.AddDays	Date.AddDays([Date],7)	Adds 7 days
+
+Result: Successfully studied Power BI objects, Power BI Service and performed text and date transformations using Power Query.
+
+Practical 8: Number Functions, Append Files, Merge Files, Conditional Columns and M Language
+Aim: To study and demonstrate number functions, append files, merge files, conditional columns and M language in Power Query.
+Procedure A: Number Functions
+1. Open Power BI Desktop and import an Excel dataset.
+2. Click Home → Transform Data.
+3. Select the numerical column.
+4. Open the Transform tab.
+5. Select Number Column → Rounding → Round.
+6. Enter the required decimal places.
+7. Apply other number transformations such as Absolute Value, Round Up and Round Down.
+8. Click Close & Apply.
+Important Number Functions (Power Query M)
+Function	Formula	Purpose
+Number.Round	Number.Round([Sales],2)	Rounds to 2 decimal places
+Number.RoundUp	Number.RoundUp([Sales])	Rounds upward
+Number.RoundDown	Number.RoundDown([Sales])	Rounds downward
+Number.Abs	Number.Abs([Profit])	Returns positive value
+Number.Sqrt	Number.Sqrt([Sales])	Calculates square root
+Number.Sign	Number.Sign([Profit])	Returns -1, 0 or 1
+Number.Mod	Number.Mod([Sales],2)	Returns remainder
+Number.Power	Number.Power([Sales],2)	Calculates power
+
+Procedure B: Append Files
+1. Open Power Query Editor.
+2. Import two or more tables having similar columns.
+3. Select Home → Append Queries.
+4. Choose Two Tables or Three or More Tables.
+5. Select the tables to combine.
+6. Click OK.
+7. Check the appended table to verify that rows are combined.
+8. Click Close & Apply.
+
+
+
+
+
+
+
+
+learn.microsoft.com
+
+
+Example:
+Table 1	Table 2
+Rahul – 80	Amit – 70
+Priya – 90	Sneha – 85
+
+After Append:
+Name	Marks
+Rahul	80
+Priya	90
+Amit	70
+Sneha	85
+
+Procedure C: Merge Files
+1. Open Power Query Editor.
+2. Import two tables having a common column.
+3. Select Home → Merge Queries.
+4. Select the first table and second table.
+5. Select the common column in both tables.
+6. Choose the required Join Kind, such as Left Outer.
+7. Click OK.
+8. Expand the merged column using the expand icon.
+9. Select the required columns and click OK.
+10. Click Close & Apply.
+
+
+
+
+
+
+
+
+medium.com
+
+
+Example:
+
+Table 1 – Student Details
+ID	Name
+1	Rahul
+2	Amit
+
+Table 2 – Student Marks
+ID	Marks
+1	80
+2	90
+
+After Merge:
+ID	Name	Marks
+1	Rahul	80
+2	Amit	90
+
+Procedure D: Conditional Columns
+1. Open Power Query Editor.
+2. Select Add Column → Conditional Column.
+3. Enter the new column name as Result.
+4. Select the required column, such as Marks.
+5. Select the operator greater than or equal to.
+6. Enter 40 as the condition.
+7. Enter Pass in the output field.
+8. Enter Fail in the Else field.
+9. Click OK.
+10. Click Close & Apply.
+Example:
+Name	Marks	Result
+Rahul	80	Pass
+Amit	35	Fail
+Priya	90	Pass
+
+Equivalent M formula:
+if [Marks] >= 40
+then "Pass"
+else "Fail"
+
+
+Procedure E: M Language Introduction
+1. Open Power BI Desktop and select Transform Data.
+2. Open Power Query Editor.
+3. Select View → Formula Bar.
+4. Select a column and apply a transformation.
+5. Observe the generated M code in the Formula Bar.
+6. Open Home → Advanced Editor.
+7. Observe the complete M language script.
+8. Write or modify a simple M expression.
+9. Click Done to apply the changes.
+10. Click Close & Apply.
+Example of M Language:
+let
+    Source = Excel.CurrentWorkbook(){[Name="Table1"]}[Content],
+    ChangedType = Table.TransformColumnTypes(
+        Source,
+        {{"Marks", Int64.Type}}
+    ),
+    AddedColumn = Table.AddColumn(
+        ChangedType,
+        "Result",
+        each if [Marks] >= 40 then "Pass" else "Fail"
+    )
+in
+    AddedColumn
+
+
+Important concepts
+Concept	Meaning
+Power Query	Tool used to clean and transform data
+Append	Combines rows from multiple tables
+Merge	Combines columns from related tables
+Conditional Column	Creates a column based on conditions
+M Language	Formula language used in Power Query
+Advanced Editor	Displays and edits the complete M code
+Close & Apply	Applies transformations to Power BI
+
+Result: Successfully performed number transformations, appended and merged tables, created conditional columns and explored M language in Power Query.
+
+Important Difference: Append vs Merge
+Append	Merge
+Combines rows	Combines columns
+Tables should have similar structures	Tables should have a common matching column
+Works vertically	Works horizontally
+Example: January + February sales	Example: Student details + Student marks
+
+
+
+
+
+
+
+
+
+
+
+Append – Vertical combination
+
+
+
+
+
+
+
+
+
+
+
+Merge – Horizontal combination
+
+
+Important Power BI DAX formulas for viva
+These are different from Power Query M functions.
+DAX function	Formula	Purpose
+SUM	Total = SUM(Sales[Sales])	Total sales
+AVERAGE	Avg = AVERAGE(Sales[Sales])	Average sales
+COUNT	Count = COUNT(Sales[Sales])	Count numbers
+DISTINCTCOUNT	Orders = DISTINCTCOUNT(Sales[Order ID])	Count unique orders
+MAX	Maximum = MAX(Sales[Sales])	Maximum sales
+MIN	Minimum = MIN(Sales[Sales])	Minimum sales
+IF	Result = IF(Sales[Sales]>=1000,"High","Low")	Conditional result
+DIVIDE	Ratio = DIVIDE([Profit],[Total Sales],0)	Safe division

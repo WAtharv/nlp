@@ -1,0 +1,411 @@
+Practical 9: Introduction to Tableau, Data, Sets, Sorting, Filtering and Parameters
+Aim: To study and demonstrate Introduction to Tableau, Data in Tableau, Sets, Sorting, Filtering and Parameters.
+Procedure A: Introduction to Tableau and Data
+1. Open Tableau Desktop or Tableau Public.
+2. Select Connect → Microsoft Excel.
+3. Browse and select your e-commerce dataset.
+4. Open the required worksheet from the Data Source page.
+5. Explore Dimensions and Measures in the Data pane.
+6. Identify discrete fields (blue) and continuous fields (green).
+7. Drag Category into Columns and Sales into Rows.
+8. Select Show Me to explore different chart types.
+9. Save the workbook using File → Save As.
+Procedure B: Creating Sets
+1. Open a new worksheet.
+2. Right-click the Category field in the Data pane.
+3. Select Create → Set.
+4. Enter the Set Name as Top Categories.
+5. Open the General tab and select the required categories.
+6. Alternatively, open the Top tab and select Top 3 by SUM(Sales).
+7. Click OK to create the Set.
+8. Drag the Set into Rows or Colour to display the selected categories.
+
+
+
+salesforcefaqs.com
+
+
+Procedure C: Sorting
+1. Drag Category into Rows.
+2. Drag Sales into Columns.
+3. Select the Sort Descending icon from the toolbar.
+4. Alternatively, right-click Category and select Sort.
+5. Choose Sort By Field → Sales → Sum → Descending.
+6. Observe the categories arranged according to sales.
+Procedure D: Filtering
+1. Drag Category into Rows.
+2. Drag Sales into Columns.
+3. Drag Category into the Filters shelf.
+4. Select the required categories.
+5. Click OK to apply the filter.
+6. Right-click the Category filter and select Show Filter.
+7. Use the filter card to select different categories.
+
+
+
+
+
+
+
+
+trailhead.salesforce.com
+
+
+Procedure E: Creating Parameters
+1. Right-click in the Data pane.
+2. Select Create → Parameter.
+3. Enter the name as Sales Threshold.
+4. Select Data Type as Integer.
+5. Enter the Current Value as 1000.
+6. Click OK.
+7. Right-click the parameter and select Show Parameter.
+8. Right-click in the Data pane and select Create → Calculated Field.
+9. Enter the following formula:
+Calculated Field: Sales Status
+IF SUM([Sales]) >= [Sales Threshold]
+THEN "High Sales"
+ELSE "Low Sales"
+END
+
+
+10. Drag Sales Status into Colour.
+11. Change the parameter value to observe the changes.
+Result: Successfully created sets, applied sorting and filtering, and used parameters in Tableau.
+
+Practical 10: Groups, Folders, Hierarchies, Marks Card, Views, Highlighting and Formatting
+Aim: To study and demonstrate Groups, Folders, Hierarchies, Marks Card, Views, Highlighting and Formatting in Tableau.
+Procedure A: Creating Groups
+1. Open a new worksheet.
+2. Drag Category into Rows.
+3. Select the required categories using Ctrl + Click.
+4. Right-click the selected categories.
+5. Select Group.
+6. Rename the group as Category Group.
+7. Observe the newly created group in the Data pane.
+
+
+
+
+
+
+
+
+guru99.com
+
+
+Procedure B: Creating Folders
+1. Right-click in the Data pane.
+2. Select Create Folder.
+3. Enter the folder name as Sales Information.
+4. Click OK.
+5. Drag related fields such as Sales, Profit and Quantity into the folder.
+6. Expand the folder to view the fields.
+Procedure C: Creating Hierarchies
+1. Locate the Region field in the Data pane.
+2. Drag State onto Region.
+3. Select Create Hierarchy.
+4. Enter the hierarchy name as Location Hierarchy.
+5. Drag City into the hierarchy.
+6. Expand the hierarchy to view Region, State and City.
+7. Drag the hierarchy into Rows to display different levels.
+Procedure D: Working with Marks Card
+1. Open a new worksheet.
+2. Drag Category into Columns.
+3. Drag Sales into Rows.
+4. Select the Marks Card.
+5. Click Colour to change chart colours.
+6. Click Size to adjust the size of marks.
+7. Click Label to display values.
+8. Click Detail to add additional information.
+9. Click Tooltip to customize displayed information.
+
+
+
+
+
+
+
+
+tableau.com
+
+
+Procedure E: Views and Highlighting
+1. Create a bar chart using Category and Sales.
+2. Drag Region into the view.
+3. Open the Analysis menu and enable Highlighting if available, or use the Highlight tool from the toolbar.
+4. Select a particular category or region to highlight related marks.
+5. Observe the highlighted values in the chart.
+6. Use Rows and Columns shelves to change the view.
+Procedure F: Formatting
+1. Open the Format menu.
+2. Select Font to change text style and size.
+3. Select Alignment to change text positioning.
+4. Select Borders to apply borders.
+5. Select Shading to change background colour.
+6. Edit the chart title by double-clicking it.
+7. Apply suitable formatting to improve the appearance.
+8. Save the workbook.
+Result: Successfully created groups, folders and hierarchies and used the Marks Card, views, highlighting and formatting options in Tableau.
+
+Practical 11: Lines and Bands, Worksheets, Charts Part 1 and Calculated Fields
+Aim: To study and demonstrate Lines and Bands, Tableau Worksheets, Charts Part 1 and Calculated Fields.
+Procedure A: Working with Tableau Worksheets
+1. Open Tableau and connect to the e-commerce dataset.
+2. Click the New Worksheet icon at the bottom.
+3. Rename the worksheet as Sales Analysis.
+4. Drag Category into Columns.
+5. Drag Sales into Rows.
+6. Select the required chart type from Show Me.
+7. Create additional worksheets for different charts.
+8. Save the workbook.
+Procedure B: Creating Charts Part 1
+1. Bar Chart: Drag Category into Rows and Sales into Columns.
+2. Column Chart: Drag Category into Columns and Sales into Rows.
+3. Line Chart: Drag Order Date into Columns and Sales into Rows.
+4. Pie Chart: Select Pie Chart from Show Me and drag Category into Colour and Sales into Angle.
+5. Area Chart: Drag Order Date into Columns and Sales into Rows, then select Area Chart.
+6. Scatter Plot: Drag Sales into Columns and Profit into Rows.
+7. Use the Marks Card to change colours, labels and sizes.
+8. Add suitable chart titles.
+
+
+
+
+Bar Chart
+
+
+
+
+
+
+Line Chart
+
+
+
+
+Pie Chart
+
+
+
+
+Scatter Plot
+
+
+Procedure C: Creating Reference Lines
+1. Open the worksheet containing the Sales chart.
+2. Click the Analytics pane.
+3. Drag Reference Line into the chart.
+4. Drop it on Table, Pane or Cell as required.
+5. Select SUM(Sales), Average or Constant as the value.
+6. Set the label and formatting.
+7. Click OK to apply the reference line.
+
+
+
+thedataschool.co.uk
+
+
+Procedure D: Creating Reference Bands
+1. Open the worksheet containing the chart.
+2. Click the Analytics pane.
+3. Drag Reference Band into the view.
+4. Drop it on Table, Pane or Cell.
+5. Select the starting value and ending value.
+6. Set the band colour and label.
+7. Click OK to display the band.
+
+
+help.tableau.com
+
+
+Procedure E: Creating Calculated Fields
+1. Open the Data pane.
+2. Right-click in an empty area.
+3. Select Create → Calculated Field.
+4. Enter the field name as Total Profit.
+5. Enter the following formula:
+SUM([Profit])
+
+
+6. Click Apply and then OK.
+7. Create another calculated field named Profit Status.
+8. Enter the formula:
+IF SUM([Profit]) > 0
+THEN "Profit"
+ELSE "Loss"
+END
+
+
+9. Drag Profit Status into Colour.
+10. Drag Total Profit into Rows to display the calculated values.
+Important Tableau Calculated Field Formulas
+Purpose	Formula
+Total Sales	SUM([Sales])
+Average Sales	AVG([Sales])
+Total Profit	SUM([Profit])
+Profit Ratio	SUM([Profit])/SUM([Sales])
+Total Quantity	SUM([Quantity])
+Category Status	IF SUM([Sales])>1000 THEN "High" ELSE "Low" END
+Discount Check	IF [Discount]>0 THEN "Discounted" ELSE "No Discount" END
+Order Year	YEAR([Order Date])
+
+Result: Successfully created worksheets, charts, reference lines, reference bands and calculated fields in Tableau.
+
+Practical 12: Charts Part 2, Aggregation, Granularity, Database Functions, Box Plot, Time Series and Forecasting
+Aim: To study and demonstrate Charts Part 2, Aggregation and Granularity, Database Functions, Box and Whisker Plot, Time Series and Forecasting in Tableau.
+Procedure A: Creating Advanced Charts (Part 2)
+1. Open Tableau and connect to the e-commerce dataset.
+2. Open a new worksheet.
+3. Drag Category into Columns and Sales into Rows.
+4. Select Treemap from Show Me.
+5. Drag Sales into Size and Category into Colour.
+6. Create a Heat Map by dragging Region into Rows and Category into Columns.
+7. Drag Sales into Colour and Size.
+8. Create a Highlight Table using the Show Me panel.
+9. Create a Packed Bubbles chart by selecting it from Show Me.
+10. Format the charts using the Marks Card.
+
+
+
+
+Treemap
+
+
+
+Heat Map
+
+
+Highlight Table
+
+
+
+Packed Bubbles
+
+
+Procedure B: Aggregation and Granularity
+1. Open a new worksheet.
+2. Drag Category into Columns.
+3. Drag Sales into Rows.
+4. Observe that Tableau automatically aggregates Sales using SUM.
+5. Click the Sales pill and select Measure → Average.
+6. Observe the change in the chart.
+7. Repeat using Minimum, Maximum and Count.
+8. Add Region to Rows to increase the level of detail.
+9. Remove Region to decrease the level of detail.
+10. Compare the results.
+Important Aggregation Functions
+Function	Formula	Purpose
+SUM	SUM([Sales])	Calculates total
+AVG	AVG([Sales])	Calculates average
+MIN	MIN([Sales])	Finds minimum
+MAX	MAX([Sales])	Finds maximum
+COUNT	COUNT([Sales])	Counts records with non-null values
+COUNTD	COUNTD([Customer ID])	Counts unique customers
+ATTR	ATTR([Category])	Returns a single value if consistent
+
+Granularity: Granularity means the level of detail present in the data or visualization.
+
+Example:
+- Category-wise Sales = Lower level of detail.
+- Category-wise and Region-wise Sales = Higher level of detail.
+Procedure C: Database Functions
+1. Open Tableau and select Connect.
+2. Choose a database connection such as MySQL or Microsoft SQL Server.
+3. Enter the server name and database details.
+4. Connect to the database.
+5. Select the required database table.
+6. Open a worksheet.
+7. Drag database fields into Rows and Columns.
+8. Create calculated fields using aggregate and database-supported functions.
+9. Observe the output and save the workbook.
+Important database-related functions:
+Function	Formula	Purpose
+COUNT	COUNT([Order ID])	Counts records
+COUNTD	COUNTD([Customer ID])	Counts unique customers
+MIN	MIN([Sales])	Minimum value
+MAX	MAX([Sales])	Maximum value
+SUM	SUM([Sales])	Total sales
+
+Note: Tableau also supports database pass-through functions such as RAWSQL, depending on the database connector.
+Procedure D: Creating Box and Whisker Plot
+1. Open a new worksheet.
+2. Drag Category into Columns.
+3. Drag Sales into Rows.
+4. Open the Show Me panel.
+5. Select Box-and-Whisker Plot.
+6. Alternatively, open Analytics and drag Box Plot into the view.
+7. Observe the median, quartiles, whiskers and outliers.
+8. Use the Marks Card to format the visualization.
+9. Save the worksheet.
+
+
+
+
+slideshare.net
+
+
+Important concepts:
+- Minimum: Lowest non-outlier value.
+- Q1: First quartile (25%).
+- Median: Middle value (50%).
+- Q3: Third quartile (75%).
+- Maximum: Highest non-outlier value.
+- Outlier: Value that lies unusually far from the rest of the data.
+
+
+
+20406080100A · ReferenceB · ComparisonMedianQ1Q3
+
+
+
+
+
+B: 96 is beyond the upper fence 90; the whisker ends at the observed non-outlier 78
+
+\(B\)
+Similar spreadWider middle spreadRight-skewedLeft-skewedPossible outlier
+
+
+Give feedback
+
+Procedure E: Creating Time Series Chart
+1. Open a new worksheet.
+2. Drag Order Date into Columns.
+3. Drag Sales into Rows.
+4. Select Line Chart from Show Me.
+5. Click the drop-down arrow on the Order Date pill.
+6. Select Month or Year depending on the required analysis.
+7. Observe the sales trend over time.
+8. Drag Region into Colour to compare different regions.
+9. Add chart title as Sales Analysis Over Time.
+10. Save the worksheet.
+
+
+wonny-world.tistory.com
+
+
+Procedure F: Creating Forecasting
+1. Open the time series worksheet.
+2. Ensure Order Date is continuous (green) and Sales is in Rows.
+3. Select the Line Chart.
+4. Open the Analytics pane.
+5. Drag Forecast into the chart.
+6. Drop it on the view.
+7. Tableau automatically generates a forecast.
+8. Observe the forecasted sales values and confidence intervals.
+9. Right-click the forecast area and select Forecast → Forecast Options to modify settings.
+10. Save the workbook.
+
+
+thedataschool.co.uk
+
+
+Important concepts:
+Term	Meaning
+Time Series	Data collected over time
+Forecasting	Predicting future values using past data
+Trend	General direction of data
+Seasonality	Repeating patterns over time
+Confidence Interval	Range showing forecast uncertainty
+
+Result: Successfully created advanced charts, performed aggregation and granularity analysis, explored database functions, created Box and Whisker plots and performed time series forecasting in Tableau.
